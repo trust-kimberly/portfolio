@@ -1,0 +1,339 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.8em;
+  color: AliceBlue;
+  scroll-behavior: smooth;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+#sunrise {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  z-index: -5;
+}
+
+#chevron {
+  height: 8vh;
+  position: absolute;
+  top: 0;
+  margin-top: 86vh;
+  margin-bottom: 2vh;
+  margin-left: 50vw;
+  visibility: hidden;
+  opacity: 1;
+  animation-name: load;
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#chevron:hover {
+  transition: 0.7s ease-in-out;
+  opacity: 0.2;
+}
+
+@keyframes load {
+  from {visibility: hidden; margin-top: 86vh;}
+  to {visibility: visible; margin-top: 90vh;}
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 33vh;
+  font-size: 9vw;
+  transition:  1.0s ease-in-out;
+  -webkit-transition:  1.0s ease-in-out;
+  -moz-transition:  1.0s ease-in-out;
+  line-height: 1.8em;
+}
+
+.spacer {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+#selfie {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.shrink {
+  font-size: 30px;
+  padding: 30px 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+#title {
+  margin: 0;
+  padding: 0;
+  color: lavenderblush;
+  font-weight: bold;
+  opacity: 1;
+  z-index: 0;
+}
+
+#title:hover {
+  color: lavenderblush;
+  opacity: 0.8;
+  cursor: crosshair;
+}
+
+a {
+  text-decoration: none;
+  color: AliceBlue;
+}
+
+a:hover {
+  color: blue;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 4vh 60vh 4vh;
+  grid-template-areas:
+  "menu menu"
+  "nav content"
+  "footer footer";
+  z-index: 2;
+  top: 0;
+}
+
+.menu {
+  font-size: 25px;
+  grid-area: menu;
+  padding: 37px 3vw 33px;
+  justify-self: end;
+  z-index: 1;
+}
+
+nav {
+  grid-area: nav;
+  margin-top: 90px;
+  margin-left: 3vw;
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.nav-item {
+  color: transparent;
+  -webkit-text-stroke: 1px AliceBlue;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: AliceBlue;
+}
+
+footer {
+  grid-area: footer;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 28vh 3vw 0 3vw;
+  color: lavenderblush;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "trustkimberly links"
+}
+
+.trustkimberly {
+  grid-area: trustkimberly;
+  justify-content: flex-start;
+}
+
+.links-container {
+  font-size: 14px;
+  grid-area: links;
+  justify-self: end;
+  text-transform: uppercase;
+}
+
+.links:hover {
+  transition: 0.5s ease-in-out;
+  color: blue;
+}
+
+
+.work {
+  grid-area: content;
+  margin-top: 90px;
+  margin-right: 5vw;
+  font-size: 30px;
+  color: black;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+.contact {
+  grid-area: content;
+  margin-top: 90px;
+  margin-right: 5vw;
+  font-size: 30px;
+  color: black;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+
+#work {
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+}
+
+#contact {
+  height: 100vh;
+}
+
+.work-child {
+  font-family: 'Lato' sans-serif;
+  font-size: 1em;
+  padding: 1% 5%;
+}
+
+body.about {
+  padding: 0;
+  margin: 0;
+  background-color: #151e1e;
+}
+
+.static {
+  font-size: 30px;
+  font-weight: bold;
+  color: lavenderblush;
+  padding: 35px 0;
+  top: 0;
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.static:hover {
+  color: lavenderblush;
+  opacity: 0.6;
+  cursor: crosshair;
+}
+
+.menu2 {
+  font-size: 25px;
+  font-weight: 100;
+  grid-area: menu;
+  padding: 35px 3vw;
+  justify-self: end;
+  z-index: 0;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.bio {
+  grid-area: content;
+  margin-top: 90px;
+  margin-right: 5vw;
+  font-size: 40px;
+  color: aliceblue;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+p.small {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+#cv {
+  color: peachpuff;
+  transition: 0.5s ease-in-out;
+}
+
+#cv:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+#showCV {
+  grid-area: content;
+  background-color: blue;
+  display: none;
+}
+
+body.contact {
+  background-color:#7b1e35;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  grid-area: content;
+  margin-top: 90px;
+  margin-right: 5vw;
+  font-size: 40px;
+  color: aliceblue;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+#email {
+  color: peachpuff;
+  transition: 0.5s ease-in-out
+}
+
+#email:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+body.work {
+  background-color: #ba99ae;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  max-width: 400px;
+  max-height: 400px;
+  display: none;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  margin-left: 20vw;
+  margin-top: 10vh;
+  object-fit: cover;
+}
+
+.links:hover + .hidden {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden-image {
+  object-fit: contain;
+}
