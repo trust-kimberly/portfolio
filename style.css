@@ -96,6 +96,7 @@ a:hover {
   top: 0;
 }
 
+
 .menu {
   font-size: 25px;
   grid-area: menu;
@@ -309,4 +310,17 @@ body.proj-page {
   width: 100%;
   object-fit: contain;
   display: flex;
+}
+
+.index {
+  bottom:0; 
+  position:absolute;
+}
+
+.next {
+  bottom:0;
+  position: absolute;
+  display: block;
+  margin-left: 89%;
+  margin-right: 3vw;
 }
