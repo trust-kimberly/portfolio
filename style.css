@@ -324,3 +324,25 @@ body.proj-page {
   margin-left: 89%;
   margin-right: 3vw;
 }
+
+.mobile {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  z-index: -5;
+  display: none;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+
+  .mobile {
+    display: block;
+  }
+
+  #sunrise {
+    display: none;
+  }
+}
