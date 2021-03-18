@@ -17,3 +17,4 @@ function reveal() {
     x.style.display = "none";
   }
 }
+

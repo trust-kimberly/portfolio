@@ -338,11 +338,4 @@ body.proj-page {
 
 @media only screen and (max-width: 600px) {
 
-  .mobile {
-    display: block;
-  }
-
-  #sunrise {
-    display: none;
-  }
 }
