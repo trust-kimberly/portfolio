@@ -349,7 +349,7 @@ body.proj-page {
       height: 100vh;
       display: grid;
       grid-template-columns: 1fr 2fr;
-      grid-template-rows: 4vh 28vh 64vh 4vh;
+      grid-template-rows: 4vh 30vh 62vh 4vh;
       grid-template-areas:
       "menu menu"
       "nav nav"
@@ -368,6 +368,14 @@ body.proj-page {
       z-index: 1;
     }
 
+    body.proj-page > .container > nav {
+      overflow: scroll;
+    }
+
+    body.proj-page > .container > .content {
+      margin: 2vh 3vw 1vh;
+    }
+
     .content {
       grid-area: content;
       margin: 5vh 3vw 1vh;
@@ -378,11 +386,24 @@ body.proj-page {
       color: white;
     }
 
+    p.proj-title {
+      font-size: 100px;
+      line-height: 110px;
+    }
+
+    body.proj-page > .container > nav > p.smaller {
+      overflow: scroll;
+    }
+
     .index {
+      margin-top: 20px;
+      font-size: 42px;
       bottom: auto;
     }
 
     .next {
+      margin-top: 20px;
+      font-size: 42px;
       bottom: auto;
     }
 
