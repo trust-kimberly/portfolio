@@ -391,7 +391,7 @@ body.proj-page {
       line-height: 110px;
     }
 
-    body.proj-page > .container > nav > p.smaller {
+    body.proj-page > .container > nav {
       overflow: scroll;
     }
 
