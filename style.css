@@ -105,6 +105,10 @@ a:hover {
   z-index: 1;
 }
 
+.home-button-medium {
+  display: none;
+}
+
 nav {
   grid-area: nav;
   margin: 90px 3vw 0 3vw;
@@ -334,6 +338,10 @@ body.proj-page {
   display: none;
 }
 
+.proj-mobile {
+  display: none;
+}
+
 /* responsive */
 
 @media only screen 
@@ -358,6 +366,14 @@ body.proj-page {
       z-index: 2;
       top: 0;
     }
+
+    .home-button-medium {
+      display: block;
+    }
+
+    .home-button-small {
+      display: none;
+    }
     
     nav {
       grid-area: nav;
@@ -366,14 +382,6 @@ body.proj-page {
       line-height: 175px;
       font-weight: bold;
       z-index: 1;
-    }
-
-    body.proj-page > .container > nav {
-      overflow: scroll;
-    }
-
-    body.proj-page > .container > .content {
-      margin: 2vh 3vw 1vh;
     }
 
     .content {
@@ -386,25 +394,71 @@ body.proj-page {
       color: white;
     }
 
-    p.proj-title {
-      font-size: 100px;
-      line-height: 110px;
+    body.proj-page > .container {
+      display: none;
     }
 
-    body.proj-page > .container > nav {
+    .proj-mobile {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 4vh 83vh 4vh;
+      grid-template-areas:
+      "menu"
+      "content"
+      "footer";
+      z-index: 2;
+      top: 0;
+    }
+
+    .proj-menu {
+      grid-area: menu;
+      font-size: 25px;
+      padding: 37px 3vw 33px;
+      justify-self: end;
+      z-index: 1;
+    }
+
+    .proj-content {
+      grid-area: content;
+      margin: 5vh 3vw 1vh;
+      font-size: 36px;
+      line-height: 45px;
+      font-weight: 400;
+      color: white;
       overflow: scroll;
     }
 
+    .proj-title {
+      font-size: 100px;
+      font-weight: bold;
+      margin: 3vh 0 5vh;
+    }
+
     .index {
-      margin-top: 20px;
-      font-size: 42px;
-      bottom: auto;
+      top: 0;
+      margin-top: 90vh;
+      position: fixed;
+      font-size: 48px;
     }
 
     .next {
-      margin-top: 20px;
-      font-size: 42px;
-      bottom: auto;
+      top: 0;
+      margin-top: 90vh;
+      margin-left: 84vw;
+      margin-right: 3vw;
+      justify-self: end;      
+      position: fixed;      
+      font-size: 48px;
+    }
+
+    p.bottom {
+      margin-bottom: 5vh;
+    }
+
+    footer.footer-mobile {
+      grid-area: footer;
+      margin-top: 9vh;
     }
 
     footer {
