@@ -422,7 +422,7 @@ body.proj-page {
     .proj-content {
       grid-area: content;
       margin: 5vh 3vw 1vh;
-      font-size: 36px;
+      font-size: 41px;
       line-height: 45px;
       font-weight: 400;
       color: white;
@@ -431,8 +431,13 @@ body.proj-page {
 
     .proj-title {
       font-size: 100px;
+      line-height: 90px;
       font-weight: bold;
       margin: 3vh 0 5vh;
+    }
+
+    p.larger {
+      font-size: 41px;
     }
 
     .index {
