@@ -440,6 +440,16 @@ body.proj-page {
       font-size: 41px;
     }
 
+    p.xl {
+      font-size: 52px;
+      line-height: 53px;
+    }
+
+    p.xxl {
+      font-size: 48px;
+      line-height: 49px;
+    }
+
     .index {
       top: 0;
       margin-top: 90vh;
